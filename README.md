@@ -1,2 +1,2 @@
 # DictionaryProject
-A python project that will return the definition of a given word
+A python project for an interactive dictionary
