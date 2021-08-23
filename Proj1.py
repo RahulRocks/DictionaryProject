@@ -4,6 +4,7 @@ data = json.load(open("./data.json")) # default mode is read mode
 
 # method that returns the definition of a word
 def lookup(word):
+	word = word.lower()
 	if word in data:
 		return data[word]
 	else:
