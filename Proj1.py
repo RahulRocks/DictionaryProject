@@ -8,6 +8,9 @@ def lookup(word):
 	word = word.lower()
 	if word in data:
 		return data[word]
+	# proper nouns will be found and returned in this block
+	elif word.title() in data:
+		return data[word.title()]
 	# Finding the closest match of the word
 	elif len(get_close_matches(word,data.keys())) > 0:
 		# Confirming user input
